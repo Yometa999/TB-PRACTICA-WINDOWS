@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios en Windows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            display: block;
+            margin: 5px 0;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicios en Windows</h1>
+    <div class="nav">
+        <a href="#p1">1. Diferencias entre Windows de 32 y 64 bits</a>
+        <a href="#p2">2. Tabla de características y tipos de versiones de Windows 10</a>
+        <a href="#p3">3. Obtener las últimas actualizaciones de Windows</a>
+        <a href="#p4">4. Requerimientos mínimos para la instalación de Windows 10</a>
+        <a href="#p5">5. Diferencia entre formatear y eliminar</a>
+        <a href="#p6">6. Qué es un sistema de archivos y para qué sirve</a>
+        <a href="#p7">7. Tabla comparativa de sistemas de archivos</a>
+        <a href="#p8">8. Pasos para activar Windows Defender</a>
+        <a href="#p9">9. Cómo saber cuántos núcleos tiene mi procesador</a>
+        <a href="#p10">10. Funcionamiento del firewall y cómo acceder</a>
+        <a href="#p11">11. Ajustes en la configuración de energía</a>
+        <a href="#p12">12. Qué es el administrador de dispositivos y tareas que se pueden efectuar</a>
+        <a href="#p13">13. Verificar hardware o dispositivos instalados</a>
+        <a href="#p14">14. Actualizar un controlador de hardware</a>
+        <a href="#p15">15. Configurar programas que se ejecutan automáticamente al inicio</a>
+        <a href="#p16">16. Ver información detallada del sistema</a>
+        <a href="#p17">17. Ver aplicaciones y procesos ejecutándose</a>
+        <a href="#p18">18. Configurar el idioma del teclado (Inglés-Español)</a>
+        <a href="#p19">19. Ver nombre del equipo y configuración TCP/IP</a>
+        <a href="#p20">20. Cambiar la dirección IP del equipo</a>
+        <a href="#p21">21. Ver estado de la comunicación del host local</a>
+        <a href="#p22">22. Obtener la MAC del equipo</a>
+        <a href="#p23">23. Visualizar sucesos y eventos del sistema</a>
+        <a href="#p24">24. Asignar o quitar atributos de un archivo</a>
+        <a href="#p25">25. Verificar discos duros instalados</a>
+        <a href="#p26">26. Desfragmentar y comprobar errores en el disco</a>
+        <a href="#p27">27. Función del archivo pagefile.sys en Windows</a>
+        <a href="#p28">28. Qué es memoria virtual y configuración</a>
+        <a href="#p29">29. Visualizar extensiones y archivos ocultos</a>
+        <a href="#p30">30. Crear un archivo de texto de solo lectura</a>
+        <a href="#p31">31. Opciones para crear y administrar particiones</a>
+        <a href="#p32">32. Qué es y para qué sirve un arranque dual</a>
+        <a href="#p33">33. Asignar una dirección IP en Windows</a>
+        <a href="#p34">34. Qué es un servicio y cómo gestionarlo</a>
+    </div>
+
+    <section id="p1">
+        <h2>1. Diferencias entre Windows de 32 y 64 bits</h2>
+        <p>Las diferencias principales entre Windows de 32 bits y 64 bits son:</p>
+        <ul>
+            <li><strong>Capacidad de memoria:</strong> Windows de 32 bits puede manejar hasta 4 GB de RAM, mientras que Windows de 64 bits puede manejar más de 4 GB, dependiendo de la versión del sistema operativo y el hardware.</li>
+            <li><strong>Rendimiento:</strong> Windows de 64 bits puede ejecutar aplicaciones más eficientemente, especialmente las que requieren más memoria y procesamiento intensivo.</li>
+            <li><strong>Compatibilidad de software:</strong> Windows de 64 bits puede ejecutar aplicaciones de 32 bits y 64 bits, mientras que Windows de 32 bits solo puede ejecutar aplicaciones de 32 bits.</li>
+        </ul>
+        <img src="screenshots/diferencias-32-64-bits.png" alt="Diferencias entre Windows de 32 y 64 bits">
+    </section>
+
+    <section id="p2">
+        <h2>2. Tabla de características y tipos de versiones de Windows 10</h2>
+        <table border="1">
+            <tr>
+                <th>Versión</th>
+                <th>Características</th>
+            </tr>
+            <tr>
+                <td>Home</td>
+                <td>Funciones básicas para el hogar, Cortana, Microsoft Edge, Continuum, Xbox Live</td>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>Incluye todas las funciones de Home, más BitLocker, Hyper-V, Remote Desktop, Group Policy Management</td>
+            </tr>
+            <tr>
+                <td>Enterprise</td>
+                <td>Incluye todas las funciones de Pro, más DirectAccess, AppLocker, Windows To Go, Credential Guard</td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>Similar a Enterprise, pero con licencias para instituciones educativas</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>Diseñado para dispositivos móviles y tablets</td>
+            </tr>
+            <tr>
+                <td>IoT</td>
+                <td>Versión para dispositivos de Internet de las cosas</td>
+            </tr>
+            <tr>
+                <td>Team</td>
+                <td>Diseñado para Surface Hub y dispositivos colaborativos</td>
+            </tr>
+        </table>
+        <img src="screenshots/versiones-windows-10.png" alt="Características y tipos de versiones de Windows 10">
+    </section>
+
+    <section id="p3">
+        <h2>3. Obtener las últimas actualizaciones de Windows</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Actualización y seguridad".</li>
+            <li>Hacer clic en "Buscar actualizaciones".</li>
+            <li>Esperar a que Windows busque y descargue las actualizaciones disponibles.</li>
+        </ol>
+        <img src="screenshots/actualizaciones-windows.png" alt="Obtener las últimas actualizaciones de Windows">
+    </section>
+
+    <section id="p4">
+        <h2>4. Requerimientos mínimos para la instalación de Windows 10</h2>
+        <ul>
+            <li>Procesador: 1 GHz o más rápido</li>
+            <li>RAM: 1 GB para 32 bits o 2 GB para 64 bits</li>
+            <li>Espacio en disco duro: 16 GB para 32 bits o 20 GB para 64 bits</li>
+            <li>Tarjeta gráfica: DirectX 9 o posterior con controlador WDDM 1.0</li>
+            <li>Pantalla: 800 x 600 píxeles</li>
+        </ul>
+        <img src="screenshots/requerimientos-windows-10.png" alt="Requerimientos mínimos para la instalación de Windows 10">
+    </section>
+
+    <section id="p5">
+        <h2>5. Diferencia entre formatear y eliminar</h2>
+        <p><strong>Formatear:</strong> Es el proceso de preparar un dispositivo de almacenamiento, como un disco duro, para su uso inicial. Esto incluye la creación de un sistema de archivos y, opcionalmente, borrar todos los datos existentes.</p>
+        <p><strong>Eliminar:</strong> Es el proceso de borrar uno o más archivos o carpetas del dispositivo de almacenamiento. Los datos eliminados pueden ser recuperables si no se han sobrescrito.</p>
+        <img src="screenshots/formatear-eliminar.png" alt="Diferencia entre formatear y eliminar">
+    </section>
+
+    <section id="p6">
+        <h2>6. Qué es un sistema de archivos y para qué sirve</h2>
+        <p>Un sistema de archivos es una estructura de datos que el sistema operativo utiliza para gestionar y almacenar archivos en un dispositivo de almacenamiento, como un disco duro o una unidad USB. Sirve para organizar los archivos de manera que puedan ser fácilmente encontrados y accesados por el sistema operativo y las aplicaciones.</p>
+        <img src="screenshots/sistema-de-archivos.png" alt="Sistema de archivos">
+    </section>
+
+    <section id="p7">
+        <h2>7. Tabla comparativa de sistemas de archivos</h2>
+        <table border="1">
+            <tr>
+                <th>Sistema de Archivos</th>
+                <th>Características</th>
+            </tr>
+            <tr>
+                <td>FAT32</td>
+                <td>Compatibilidad amplia, tamaño máximo de archivo de 4 GB, particiones de hasta 2 TB</td>
+            </tr>
+            <tr>
+                <td>NTFS</td>
+                <td>Seguridad avanzada, tamaño de archivo y partición prácticamente ilimitados, recuperación de errores</td>
+            </tr>
+            <tr>
+                <td>exFAT</td>
+                <td>Compatibilidad con archivos grandes, utilizado en unidades flash y tarjetas SD</td>
+            </tr>
+            <tr>
+                <td>ReFS</td>
+                <td>Resiliencia a la corrupción, escalabilidad, integridad de datos</td>
+            </tr>
+        </table>
+        <img src="screenshots/comparativa-sistemas-de-archivos.png" alt="Comparativa de sistemas de archivos">
+    </section>
+
+    <section id="p8">
+        <h2>8. Pasos para activar Windows Defender</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Actualización y seguridad".</li>
+            <li>Hacer clic en "Seguridad de Windows".</li>
+            <li>Seleccionar "Protección contra virus y amenazas".</li>
+            <li>Activar la protección en tiempo real.</li>
+        </ol>
+        <img src="screenshots/activar-windows-defender.png" alt="Activar Windows Defender">
+    </section>
+
+    <section id="p9">
+        <h2>9. Cómo saber cuántos núcleos tiene mi procesador</h2>
+        <ol>
+            <li>Abrir el Administrador de tareas (Ctrl + Shift + Esc).</li>
+            <li>Ir a la pestaña "Rendimiento".</li>
+            <li>Seleccionar "CPU" y ver el número de núcleos en la parte inferior derecha.</li>
+        </ol>
+        <img src="screenshots/numero-nucleos-procesador.png" alt="Saber cuántos núcleos tiene mi procesador">
+    </section>
+
+    <section id="p10">
+        <h2>10. Funcionamiento del firewall y cómo acceder</h2>
+        <p>El firewall actúa como una barrera de seguridad que controla el tráfico de red entrante y saliente basado en reglas de seguridad predefinidas. Protege el sistema contra accesos no autorizados y ataques malintencionados.</p>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Actualización y seguridad".</li>
+            <li>Hacer clic en "Seguridad de Windows".</li>
+            <li>Seleccionar "Firewall y protección de red".</li>
+        </ol>
+        <img src="screenshots/firewall-windows.png" alt="Acceder al firewall de Windows">
+    </section>
+
+    <section id="p11">
+        <h2>11. Ajustes en la configuración de energía</h2>
+        <p>En la configuración de energía, puedes cambiar opciones como:</p>
+        <ul>
+            <li>Plan de energía: Balanceado, alto rendimiento o ahorro de energía.</li>
+            <li>Apagado de pantalla y suspensión: Configurar cuándo se apaga la pantalla o se pone en suspensión el equipo.</li>
+            <li>Configuraciones avanzadas: Ajustes detallados como comportamiento de los botones de encendido, opciones de batería, y más.</li>
+        </ul>
+        <img src="screenshots/configuracion-energia.png" alt="Configuración de energía en Windows">
+    </section>
+
+    <section id="p12">
+        <h2>12. Qué es el administrador de dispositivos y tareas que se pueden efectuar</h2>
+        <p>El administrador de dispositivos es una herramienta que permite gestionar los dispositivos de hardware instalados en el sistema. Algunas de las tareas que se pueden efectuar incluyen:</p>
+        <ul>
+            <li>Actualizar controladores.</li>
+            <li>Deshabilitar o habilitar dispositivos.</li>
+            <li>Desinstalar dispositivos.</li>
+            <li>Ver propiedades y detalles de los dispositivos.</li>
+        </ul>
+        <img src="screenshots/administrador-de-dispositivos.png" alt="Administrador de dispositivos en Windows">
+    </section>
+
+    <section id="p13">
+        <h2>13. Verificar hardware o dispositivos instalados</h2>
+        <ol>
+            <li>Abrir el Administrador de dispositivos.</li>
+            <li>Explorar la lista de dispositivos instalados en el sistema.</li>
+            <li>Hacer clic derecho en un dispositivo para ver sus propiedades o actualizar su controlador.</li>
+        </ol>
+        <img src="screenshots/verificar-hardware.png" alt="Verificar hardware instalado en Windows">
+    </section>
+
+    <section id="p14">
+        <h2>14. Actualizar un controlador de hardware</h2>
+        <ol>
+            <li>Abrir el Administrador de dispositivos.</li>
+            <li>Hacer clic derecho en el dispositivo cuyo controlador deseas actualizar.</li>
+            <li>Seleccionar "Actualizar controlador".</li>
+            <li>Elegir "Buscar automáticamente software de controlador actualizado" o "Buscar software de controlador en el equipo".</li>
+        </ol>
+        <img src="screenshots/actualizar-controlador.png" alt="Actualizar un controlador de hardware en Windows">
+    </section>
+
+    <section id="p15">
+        <h2>15. Configurar programas que se ejecutan automáticamente al inicio</h2>
+        <ol>
+            <li>Abrir el Administrador de tareas (Ctrl + Shift + Esc).</li>
+            <li>Ir a la pestaña "Inicio".</li>
+            <li>Seleccionar el programa y hacer clic en "Habilitar" o "Deshabilitar".</li>
+        </ol>
+        <img src="screenshots/programas-inicio.png" alt="Configurar programas que se ejecutan al inicio en Windows">
+    </section>
+
+    <section id="p16">
+        <h2>16. Ver información detallada del sistema</h2>
+        <ol>
+            <li>Abrir el menú de inicio y buscar "Información del sistema".</li>
+            <li>Seleccionar la aplicación "Información del sistema".</li>
+            <li>Explorar la información detallada sobre el hardware, el software y la configuración del sistema.</li>
+        </ol>
+        <img src="screenshots/informacion-sistema.png" alt="Ver información detallada del sistema en Windows">
+    </section>
+
+    <section id="p17">
+        <h2>17. Ver aplicaciones y procesos ejecutándose</h2>
+        <ol>
+            <li>Abrir el Administrador de tareas (Ctrl + Shift + Esc).</li>
+            <li>Ir a la pestaña "Procesos".</li>
+            <li>Ver la lista de aplicaciones y procesos en ejecución, así como su uso de CPU y memoria.</li>
+        </ol>
+        <img src="screenshots/procesos-ejecucion.png" alt="Ver aplicaciones y procesos en ejecución en Windows">
+    </section>
+
+    <section id="p18">
+        <h2>18. Configurar el idioma del teclado (Inglés-Español)</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Hora e idioma".</li>
+            <li>Hacer clic en "Idioma".</li>
+            <li>Agregar un idioma y seleccionar Inglés o Español.</li>
+            <li>Seleccionar el idioma agregado y hacer clic en "Opciones" para configurar el teclado.</li>
+        </ol>
+        <img src="screenshots/configurar-idioma-teclado.png" alt="Configurar el idioma del teclado en Windows">
+    </section>
+
+    <section id="p19">
+        <h2>19. Ver nombre del equipo y configuración TCP/IP</h2>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>hostname</code> para ver el nombre del equipo.</li>
+            <li>Ejecutar el comando <code>ipconfig</code> para ver la configuración TCP/IP.</li>
+        </ol>
+        <img src="screenshots/nombre-equipo-tcpip.png" alt="Ver nombre del equipo y configuración TCP/IP en Windows">
+    </section>
+
+    <section id="p20">
+        <h2>20. Cambiar la dirección IP del equipo</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Red e Internet".</li>
+            <li>Hacer clic en "Cambiar opciones de adaptador".</li>
+            <li>Hacer clic derecho en la conexión de red y seleccionar "Propiedades".</li>
+            <li>Seleccionar "Protocolo de Internet versión 4 (TCP/IPv4)" y hacer clic en "Propiedades".</li>
+            <li>Configurar una dirección IP manualmente.</li>
+        </ol>
+        <img src="screenshots/cambiar-ip.png" alt="Cambiar la dirección IP en Windows">
+    </section>
+
+    <section id="p21">
+        <h2>21. Ver estado de la comunicación del host local</h2>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>ping [dirección IP]</code> para ver el estado de la comunicación con otro equipo.</li>
+        </ol>
+        <img src="screenshots/ping-comunicacion.png" alt="Ver estado de la comunicación del host local en Windows">
+    </section>
+
+    <section id="p22">
+        <h2>22. Obtener la MAC del equipo</h2>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>getmac</code> para obtener la dirección MAC del equipo.</li>
+        </ol>
+        <img src="screenshots/obtener-mac.png" alt="Obtener la MAC del equipo en Windows">
+    </section>
+
+    <section id="p23">
+        <h2>23. Visualizar sucesos y eventos del sistema</h2>
+        <ol>
+            <li>Abrir el menú de inicio y buscar "Visor de eventos".</li>
+            <li>Seleccionar la aplicación "Visor de eventos".</li>
+            <li>Explorar los registros de sucesos y eventos del sistema operativo.</li>
+        </ol>
+        <img src="screenshots/visor-eventos.png" alt="Visualizar sucesos y eventos del sistema en Windows">
+    </section>
+
+    <section id="p24">
+        <h2>24. Asignar o quitar atributos de un archivo</h2>
+        <p>Para ocultar un archivo usando el símbolo del sistema:</p>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>attrib +h [ruta del archivo]</code> para ocultar el archivo.</li>
+        </ol>
+        <p>Para quitar el atributo de oculto:</p>
+        <ol>
+            <li>Ejecutar el comando <code>attrib -h [ruta del archivo]</code> para hacer visible el archivo nuevamente.</li>
+        </ol>
+        <img src="screenshots/atributos-archivo.png" alt="Asignar o quitar atributos de un archivo en Windows">
+    </section>
+
+    <section id="p25">
+        <h2>25. Verificar discos duros instalados</h2>
+        <ol>
+            <li>Abrir el menú de inicio y buscar "Administración de discos".</li>
+            <li>Seleccionar "Crear y formatear particiones del disco duro".</li>
+            <li>Ver la lista de discos duros instalados, sus particiones y sistemas de archivos.</li>
+        </ol>
+        <img src="screenshots/administracion-discos.png" alt="Verificar discos duros instalados en Windows">
+    </section>
+
+    <section id="p26">
+        <h2>26. Desfragmentar y comprobar errores en el disco</h2>
+        <p>Para desfragmentar el disco:</p>
+        <ol>
+            <li>Abrir el menú de inicio y buscar "Desfragmentar y optimizar unidades".</li>
+            <li>Seleccionar la unidad y hacer clic en "Optimizar".</li>
+        </ol>
+        <p>Para comprobar errores en el disco:</p>
+        <ol>
+            <li>Abrir el menú de inicio y buscar "Este equipo".</li>
+            <li>Hacer clic derecho en la unidad y seleccionar "Propiedades".</li>
+            <li>Ir a la pestaña "Herramientas" y hacer clic en "Comprobar".</li>
+        </ol>
+        <img src="screenshots/desfragmentar-comprobar.png" alt="Desfragmentar y comprobar errores en el disco en Windows">
+    </section>
+
+    <section id="p27">
+        <h2>27. Función del archivo pagefile.sys en Windows</h2>
+        <p>El archivo <code>pagefile.sys</code> es el archivo de paginación de Windows. Actúa como memoria virtual, almacenando datos que no caben en la memoria RAM física. Esto ayuda a mejorar el rendimiento del sistema al permitir que aplicaciones y procesos utilicen más memoria de la disponible físicamente.</p>
+        <img src="screenshots/pagefile-sys.png" alt="Función del archivo pagefile.sys en Windows">
+    </section>
+
+    <section id="p28">
+        <h2>28. Qué es memoria virtual y configuración</h2>
+        <p>La memoria virtual es una técnica de gestión de memoria que permite que el sistema operativo utilice espacio en el disco duro como si fuera memoria RAM adicional. Esto permite ejecutar aplicaciones más grandes de lo que la memoria física permitiría.</p>
+        <p>Para configurar la memoria virtual en Windows:</p>
+        <ol>
+            <li>Abrir el menú de inicio y buscar "Configuración avanzada del sistema".</li>
+            <li>Ir a la pestaña "Opciones avanzadas" y hacer clic en "Configuración" en la sección de Rendimiento.</li>
+            <li>Hacer clic en "Opciones avanzadas" y luego en "Cambiar" en la sección de Memoria virtual.</li>
+            <li>Configurar el tamaño del archivo de paginación según sea necesario.</li>
+        </ol>
+        <img src="screenshots/memoria-virtual.png" alt="Configuración de la memoria virtual en Windows">
+    </section>
+
+    <section id="p29">
+        <h2>29. Visualizar extensiones y archivos ocultos</h2>
+        <ol>
+            <li>Abrir el Explorador de archivos.</li>
+            <li>Ir a la pestaña "Vista".</li>
+            <li>Marcar las casillas "Extensiones de nombre de archivo" y "Elementos ocultos".</li>
+        </ol>
+        <img src="screenshots/ver-archivos-ocultos.png" alt="Visualizar extensiones y archivos ocultos en Windows">
+    </section>
+
+    <section id="p30">
+        <h2>30. Crear un archivo de texto de solo lectura</h2>
+        <p>Para hacerlo con interfaz gráfica:</p>
+        <ol>
+            <li>Crear un archivo de texto en el Explorador de archivos.</li>
+            <li>Hacer clic derecho en el archivo y seleccionar "Propiedades".</li>
+            <li>Marcar la casilla "Solo lectura" y hacer clic en "Aceptar".</li>
+        </ol>
+        <p>Para hacerlo con comando:</p>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>attrib +r [ruta del archivo]</code> para hacer el archivo de solo lectura.</li>
+        </ol>
+        <img src="screenshots/archivo-solo-lectura.png" alt="Crear un archivo de solo lectura en Windows">
+    </section>
+
+    <section id="p31">
+        <h2>31. Opciones para crear y administrar particiones</h2>
+        <p>Las opciones para crear y administrar particiones en Windows incluyen:</p>
+        <ul>
+            <li>Usar la herramienta "Administración de discos".</li>
+            <li>Usar comandos de diskpart en el Símbolo del sistema.</li>
+            <li>Utilizar software de terceros para la gestión de particiones.</li>
+        </ul>
+        <img src="screenshots/crear-particiones.png" alt="Crear y administrar particiones en Windows">
+    </section>
+
+    <section id="p32">
+        <h2>32. Qué es y para qué sirve un arranque dual</h2>
+        <p>Un arranque dual es una configuración en la que se instalan dos sistemas operativos en el mismo equipo y se puede seleccionar cuál iniciar al encender el equipo. Sirve para aprovechar las ventajas de dos sistemas operativos diferentes sin necesidad de usar dos dispositivos separados.</p>
+        <img src="screenshots/arranque-dual.png" alt="Arranque dual en Windows">
+    </section>
+
+    <section id="p33">
+        <h2>33. Asignar una dirección IP en Windows</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Red e Internet".</li>
+            <li>Hacer clic en "Cambiar opciones de adaptador".</li>
+            <li>Hacer clic derecho en la conexión de red y seleccionar "Propiedades".</li>
+            <li>Seleccionar "Protocolo de Internet versión 4 (TCP/IPv4)" y hacer clic en "Propiedades".</li>
+            <li>Configurar una dirección IP manualmente.</li>
+        </ol>
+        <img src="screenshots/asignar-ip.png" alt="Asignar una dirección IP en Windows">
+    </section>
+
+    <section id="p34">
+        <h2>34. Configurar una dirección IP dinámica en Windows</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Red e Internet".</li>
+            <li>Hacer clic en "Cambiar opciones de adaptador".</li>
+            <li>Hacer clic derecho en la conexión de red y seleccionar "Propiedades".</li>
+            <li>Seleccionar "Protocolo de Internet versión 4 (TCP/IPv4)" y hacer clic en "Propiedades".</li>
+            <li>Seleccionar "Obtener una dirección IP automáticamente".</li>
+        </ol>
+        <img src="screenshots/configurar-ip-dinamica.png" alt="Configurar una dirección IP dinámica en Windows">
+    </section>
+
+    <section id="p35">
+        <h2>35. Liberar y renovar la dirección IP</h2>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>ipconfig /release</code> para liberar la dirección IP actual.</li>
+            <li>Ejecutar el comando <code>ipconfig /renew</code> para obtener una nueva dirección IP.</li>
+        </ol>
+        <img src="screenshots/liberar-renovar-ip.png" alt="Liberar y renovar la dirección IP en Windows">
+    </section>
+
+    <section id="p36">
+        <h2>36. Ver la dirección IP y la puerta de enlace predeterminada</h2>
+        <ol>
+            <li>Abrir el Símbolo del sistema.</li>
+            <li>Ejecutar el comando <code>ipconfig</code>.</li>
+            <li>Buscar la dirección IP y la puerta de enlace predeterminada en la salida del comando.</li>
+        </ol>
+        <img src="screenshots/ver-ip-puerta-enlace.png" alt="Ver la dirección IP y la puerta de enlace predeterminada en Windows">
+    </section>
+
+    <section id="p37">
+        <h2>37. Configurar una impresora en red</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Dispositivos".</li>
+            <li>Hacer clic en "Impresoras y escáneres".</li>
+            <li>Hacer clic en "Agregar una impresora o un escáner".</li>
+            <li>Seleccionar la impresora en red y seguir las instrucciones para completar la configuración.</li>
+        </ol>
+        <img src="screenshots/configurar-impresora-red.png" alt="Configurar una impresora en red en Windows">
+    </section>
+
+    <section id="p38">
+        <h2>38. Conectar una impresora a un puerto TCP/IP</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Dispositivos".</li>
+            <li>Hacer clic en "Impresoras y escáneres".</li>
+            <li>Hacer clic en "Agregar una impresora o un escáner".</li>
+            <li>Hacer clic en "La impresora que quiero no está en la lista".</li>
+            <li>Seleccionar "Agregar una impresora utilizando una dirección TCP/IP o un nombre de host" y seguir las instrucciones.</li>
+        </ol>
+        <img src="screenshots/conectar-impresora-tcpip.png" alt="Conectar una impresora a un puerto TCP/IP en Windows">
+    </section>
+
+    <section id="p39">
+        <h2>39. Compartir una impresora en red</h2>
+        <ol>
+            <li>Abrir el menú de Configuración.</li>
+            <li>Seleccionar "Dispositivos".</li>
+            <li>Hacer clic en "Impresoras y escáneres".</li>
+            <li>Seleccionar la impresora que deseas compartir y hacer clic en "Administrar".</li>
+            <li>Hacer clic en "Propiedades de la impresora" y luego en la pestaña "Compartir".</li>
+            <li>Marcar la casilla "Compartir esta impresora" y proporcionar un nombre de recurso compartido.</li>
+        </ol>
+        <img src="screenshots/compartir-impresora.png" alt="Compartir una impresora en red en Windows">
+    </section>
+
+    <section id="p40">
+        <h2>40. Qué es y para qué sirve Cortana</h2>
+        <p>Cortana es el asistente virtual de Microsoft integrado en Windows. Sirve para ayudar a los usuarios a realizar diversas tareas mediante comandos de voz o texto, como buscar información, gestionar el calendario, enviar correos electrónicos, configurar recordatorios, y controlar dispositivos compatibles.</p>
+        <img src="screenshots/cortana.png" alt="Cortana en Windows">
+    </section>
+</main>
+
+<footer>
+    <p>Este material es proporcionado como parte de la formación en sistemas operativos y redes.</p>
+</footer>
+
+</body>
+</html>
