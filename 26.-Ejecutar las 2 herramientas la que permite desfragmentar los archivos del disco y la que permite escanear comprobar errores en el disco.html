@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>26.- Ejecutar las 2 herramientas la que permite desfragmentar los archivos del disco y la que permite escanear (comprobar) errores en el disco</title>
+    <link rel="stylesheet" href="./paginas.css">
 </head>
 <body>
     <h1>26.- Ejecutar las 2 herramientas la que permite desfragmentar los archivos del disco y la que permite escanear (comprobar) errores en el disco</h1>
+
+    <h2>Cómo desfragmentar y comprobar errores en el disco</h2>
+    
+    <h2>Desfragmentar archivos del disco</h2>
+    <p>Para desfragmentar los archivos del disco en Windows, sigue estos pasos:</p>
+    
+    <h3>Paso 1: Abrir la herramienta de desfragmentación</h3>
+    <p>Para abrir la herramienta de desfragmentación de disco, sigue uno de los siguientes métodos:</p>
+    <ul>
+        <li>Presiona las teclas <code>Win + S</code>, escribe <code>Desfragmentar y optimizar unidades</code> y selecciona la aplicación.</li>
+        <li>En el menú de inicio, busca <code>Desfragmentar y optimizar unidades</code> y selecciona la aplicación.</li>
+    </ul>
+    
+    <img src="./img/Desfragmentar_1.png" alt="">
+
+    <h3>Paso 2: Seleccionar el disco</h3>
+    <p>En la ventana de Desfragmentar y optimizar unidades, selecciona el disco que deseas desfragmentar y haz clic en <strong>Optimizar</strong>.</p>
+    
+    <h3>Paso 3: Iniciar el proceso de desfragmentación</h3>
+    <p>El proceso de desfragmentación se iniciará y puede tardar un tiempo dependiendo del tamaño y la fragmentación del disco. Puedes ver el progreso en la ventana.</p>
+    
+    <h2>Comprobar errores en el disco</h2>
+    <p>Para comprobar errores en el disco usando el Símbolo del sistema, sigue estos pasos:</p>
+    
+    <h3>Paso 1: Abrir el Símbolo del sistema como administrador</h3>
+    <p>Para abrir el Símbolo del sistema como administrador, sigue uno de los siguientes métodos:</p>
+    <ul>
+        <li>Presiona las teclas <code>Win + X</code> y selecciona <strong>Símbolo del sistema (Administrador)</strong>.</li>
+        <li>Haz clic con el botón derecho en el botón de inicio de Windows y selecciona <strong>Símbolo del sistema (Administrador)</strong>.</li>
+    </ul>
+    
+    <h3>Paso 2: Ejecutar el comando chkdsk</h3>
+    <p>Para escanear y reparar errores en el disco, usa el comando <code>chkdsk</code>. Escribe el siguiente comando y presiona Enter:</p>
+    <pre><code>chkdsk C: /f</code></pre>
+    <p>Donde <code>C:</code> es la letra de la unidad que deseas comprobar. El parámetro <code>/f</code> indica que se deben corregir los errores encontrados. Puede que te pida reiniciar el sistema para completar la comprobación si la unidad está en uso.</p>
+    
+    <h3>Opción adicional: Escaneo más exhaustivo</h3>
+    <p>Para realizar un escaneo más exhaustivo que también busque sectores defectuosos, puedes usar el comando con los parámetros <code>/f</code> y <code>/r</code>:</p>
+    <pre><code>chkdsk C: /f /r</code></pre>
+    
+    <h2>Conclusión</h2>
+    <p>Las herramientas de desfragmentación y comprobación de errores en el disco son esenciales para mantener el rendimiento y la integridad de tus discos duros en Windows. Asegúrate de ejecutarlas periódicamente para prevenir problemas y optimizar el rendimiento de tu sistema.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
 </body>
 </html>

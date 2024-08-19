@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31. Que opciones existen para crear y administrar particiones</title>
+    <link rel="stylesheet" href="./paginas.css">
+</head>
+<body>
+    <h1>31. Que opciones existen para crear y administrar particiones</h1>
+
+    <h2>Crear y administrar particiones en Windows</h2>
+    
+    <h2>Opciones para crear y administrar particiones</h2>
+    <p>Windows ofrece varias herramientas y métodos para crear y administrar particiones en tu disco duro. A continuación se describen las opciones más comunes:</p>
+    
+    <h3>1. Administración de discos</h3>
+    <p>La herramienta de Administración de discos es una utilidad integrada en Windows que permite gestionar particiones de disco. Para acceder a ella, sigue estos pasos:</p>
+    
+    <img src="./img/31_1.png" alt="">
+
+    <ul>
+        <li>Presiona las teclas <code>Win + X</code> y selecciona <strong>Administración de discos</strong>.</li>
+        <li>En la ventana de Administración de discos, puedes ver todos los discos y particiones disponibles.</li>
+        <li>Para crear una nueva partición, haz clic derecho en un espacio no asignado y selecciona <strong>Nuevo volumen simple</strong>.</li>
+        <li>Sigue el asistente para especificar el tamaño de la partición, asignar una letra de unidad y formatear la partición.</li>
+    </ul>
+    
+    <h3>2. Símbolo del sistema (Diskpart)</h3>
+    <p>Diskpart es una utilidad de línea de comandos que permite gestionar particiones de manera avanzada. Para usar Diskpart, sigue estos pasos:</p>
+
+    <img src="./img/31_2.png" alt=""></div>
+
+    <ul>
+        <li>Presiona las teclas <code>Win + X</code> y selecciona <strong>Símbolo del sistema (Administrador)</strong>.</li>
+        <li>Escribe <code>diskpart</code> y presiona Enter para iniciar la utilidad Diskpart.</li>
+        <li>Usa los siguientes comandos para gestionar particiones:
+            <pre><code>list disk</code> (Muestra todos los discos disponibles)<br>
+<code>select disk X</code> (Selecciona el disco X)<br>
+<code>list partition</code> (Muestra todas las particiones en el disco seleccionado)<br>
+<code>create partition primary size=XXXX</code> (Crea una nueva partición primaria de tamaño XXXX en MB)<br>
+<code>format fs=ntfs quick</code> (Formatea la partición en NTFS rápidamente)<br>
+<code>assign letter=X</code> (Asigna la letra de unidad X a la nueva partición)
+            </code></pre>
+        </li>
+    </ul>
+    
+    <h3>3. Herramientas de terceros</h3>
+    <p>Existen varias herramientas de terceros que ofrecen funcionalidades avanzadas para la gestión de particiones. Algunas de las más populares incluyen:</p>
+    <ul>
+        <li><strong>MiniTool Partition Wizard:</strong> Una herramienta completa para gestionar particiones, incluyendo redimensionar, mover, fusionar y dividir particiones.</li>
+        <li><strong>EaseUS Partition Master:</strong> Ofrece una interfaz fácil de usar para crear, redimensionar, mover y clonar particiones.</li>
+        <li><strong>AOMEI Partition Assistant:</strong> Una herramienta potente para gestionar particiones, incluyendo la migración del sistema operativo a un SSD.</li>
+    </ul>
+    
+    <h2>Conclusión</h2>
+    <p>La gestión de particiones es una tarea importante para mantener la organización y el rendimiento de tus discos duros. Windows ofrece varias opciones integradas, como Administración de discos y Diskpart, así como herramientas de terceros que pueden proporcionar funcionalidades adicionales y una mayor facilidad de uso. Elige la opción que mejor se adapte a tus necesidades y habilidades técnicas.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
+</body>
+</html>

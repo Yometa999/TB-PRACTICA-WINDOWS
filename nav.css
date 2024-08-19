@@ -1,0 +1,46 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.flex-item{
+/*    border: 1px solid black;*/
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 25px;
+
+    margin-bottom: 120px;
+}
+
+/* 100% to prevent img from overflowing the div */
+.logo{
+    /* width: 100%; */
+    width: 128px;
+    height: 100%;
+    /* justify-self: flex-start; */
+}
+
+h2{
+    font-size: 36px;
+    text-align: center;
+}
+
+.nav2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+body{
+    margin: 0;
+}

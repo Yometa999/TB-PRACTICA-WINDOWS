@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./paginas.css">
+    <title>28. Que es memoria vitual Y ver la configuración de la memoria virtual de Windows</title>
+</head>
+<body>
+
+    <h1>28. Que es memoria vitual Y ver la configuración de la memoria virtual de Windows</h1>
+
+    <h2>Memoria Virtual en Windows</h2>
+    
+    <h2>¿Qué es la Memoria Virtual?</h2>
+    <p>La memoria virtual es una técnica de gestión de memoria que permite a un sistema operativo usar espacio en el disco duro como si fuera memoria RAM adicional. Esto se logra mediante el archivo de paginación, también conocido como <code>pagefile.sys</code>, que actúa como una extensión de la memoria física (RAM). La memoria virtual permite que el sistema ejecute más aplicaciones simultáneamente de lo que la memoria RAM física permitiría.</p>
+    
+    <h2>¿Cómo funciona la Memoria Virtual?</h2>
+    <p>Cuando la memoria RAM se llena, el sistema operativo mueve algunos datos de la RAM al archivo de paginación en el disco duro. Este proceso libera espacio en la RAM para que otras aplicaciones puedan utilizarla. Aunque el acceso a datos en el disco duro es más lento que en la RAM, la memoria virtual ayuda a prevenir errores de falta de memoria y permite que el sistema siga funcionando sin problemas.</p>
+    
+    <h2>Ver y Configurar la Memoria Virtual en Windows</h2>
+    <p>Para ver y configurar la memoria virtual en Windows, sigue estos pasos:</p>
+    
+    <h3>Paso 1: Abrir la Configuración del Sistema</h3>
+    <ul>
+        <li>Haz clic con el botón derecho en <strong>Este PC</strong> o <strong>Mi PC</strong> y selecciona <strong>Propiedades</strong>.</li>
+        <li>En la ventana de Propiedades del sistema, haz clic en <strong>Configuración avanzada del sistema</strong> en el panel izquierdo.</li>
+    </ul>
+
+    <img src="./img/28_1.png" alt="">
+    
+    <h3>Paso 2: Acceder a las Opciones de Rendimiento</h3>
+    <ul>
+        <li>En la ventana de Propiedades del sistema, ve a la pestaña <strong>Avanzado</strong> y haz clic en <strong>Configuración</strong> en la sección <strong>Rendimiento</strong>.</li>
+    </ul>
+    
+    <img src="./img/28_2.png" alt="">
+
+    <h3>Paso 3: Configurar la Memoria Virtual</h3>
+    <ul>
+        <li>En la ventana de Opciones de rendimiento, ve a la pestaña <strong>Avanzado</strong> y haz clic en <strong>Cambiar</strong> en la sección <strong>Memoria virtual</strong>.</li>
+        <li>En la ventana de Memoria virtual, puedes ver y ajustar el tamaño del archivo de paginación para cada unidad.</li>
+        <li>Para personalizar el tamaño del archivo de paginación, desmarca la opción <strong>Administrar automáticamente el tamaño del archivo de paginación para todas las unidades</strong> y selecciona <strong>Tamaño personalizado</strong>.</li>
+        <li>Ingresa el tamaño inicial y el tamaño máximo del archivo de paginación en megabytes (MB) y haz clic en <strong>Establecer</strong>.</li>
+        <li>Haz clic en <strong>Aceptar</strong> para aplicar los cambios.</li>
+    </ul>
+    
+    <h2>Consejos para Configurar la Memoria Virtual</h2>
+    <p>Aquí tienes algunos consejos para configurar la memoria virtual:</p>
+    <ul>
+        <li>El tamaño recomendado del archivo de paginación es generalmente 1.5 veces la cantidad de RAM instalada en tu sistema.</li>
+        <li>Si tienes varios discos duros, considera mover el archivo de paginación a una unidad diferente a la que contiene el sistema operativo para mejorar el rendimiento.</li>
+        <li>Evita deshabilitar completamente el archivo de paginación, ya que esto puede causar errores de falta de memoria y afectar el rendimiento del sistema.</li>
+    </ul>
+    
+    <h2>Conclusión</h2>
+    <p>La memoria virtual es una parte crucial de la gestión de memoria en Windows, permitiendo al sistema utilizar espacio en el disco duro para complementar la memoria RAM. Configurar adecuadamente la memoria virtual puede mejorar el rendimiento del sistema y prevenir problemas de falta de memoria.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1{
+    color: #FFFF;
+}
+
+header{
+    background-color: #2665ae;
+}
+
+body{
+    background-color: #132f52;
+    margin: 0;
+}
+
+.logo{
+    width: 125px;
+}
+
+
+.scrolling-container {
+  /* background-color: greenyellow; */
+  background-color: #4F51E0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /*default
+  font-size: 25px;*/
+}
+
+.scrolling-card {
+  /* background-color: cornflowerblue; */
+  background-color: #B0DB04;
+
+  flex: 0 0 auto;
+  border: solid 1px black;
+  margin: 10px;
+
+  width: 750px;
+  height: 450px
+
+  /* Default
+  width: 250px;
+  height: 150px*/;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .scrolling-container::-webkit-scrollbar {
+  display: none;
+} */
+
+.scrolling-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+img{
+  width: auto;
+  height: auto;
+}
+
+h2{
+  font-family: "Anton SC", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 400px;
+}
+
+h2::selection {
+  background: yellow;
+  color: yellow;
+}
+
+a {
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}

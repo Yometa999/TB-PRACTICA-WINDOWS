@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24.- En el Simbolo del sistema cual es el comando que me permite asignar o quitar atributos de un archivo ejemplificar ocultando un archivo</title>
+    <link rel="stylesheet" href="./paginas.css">
 </head>
 <body>
     <h1>24.- En el Simbolo del sistema cual es el comando que me permite asignar o quitar atributos de un archivo ejemplificar ocultando un archivo</h1>
+
+    
+
+    <h2>Comando attrib en el Símbolo del sistema</h2>
+    <p>El comando <code>attrib</code> permite asignar o quitar atributos de un archivo o directorio en el sistema operativo Windows. A continuación, se explica cómo utilizar este comando y se proporciona un ejemplo para ocultar un archivo.</p>
+    
+    <h2>Paso 1: Abrir el Símbolo del sistema</h2>
+    <p>Puedes hacerlo buscando "cmd" en el menú de inicio y seleccionando "Símbolo del sistema".</p>
+
+    <img src="./img/cmd_1.png" alt="">
+
+    <h2>Paso 2: Usar el comando attrib</h2>
+    <p>La sintaxis básica del comando <code>attrib</code> es la siguiente:</p>
+    <pre><code>attrib [+atributo | -atributo] [ruta_del_archivo]</code></pre>
+    <p>Donde <code>+atributo</code> agrega un atributo y <code>-atributo</code> quita un atributo. Los atributos comunes son:</p>
+    <ul>
+        <li><code>H</code> - Oculto</li>
+        <li><code>R</code> - Solo lectura (Read-only)</li>
+        <li><code>A</code> - Archivo (Archive)</li>
+        <li><code>S</code> - Sistema</li>
+    </ul>
+    
+    <h2>Ejemplo: Ocultar un archivo</h2>
+    <p>Para ocultar un archivo llamado <code>ejemplo.txt</code> en el directorio <code>C:\Documentos</code>, usa el siguiente comando:</p>
+    <pre><code>attrib +H C:\Documentos\ejemplo.txt</code></pre>
+    <p>Este comando asigna el atributo "Oculto" al archivo <code>ejemplo.txt</code>.</p>
+    
+    <h2>Ejemplo: Mostrar un archivo oculto</h2>
+    <p>Para quitar el atributo "Oculto" del mismo archivo, usa el siguiente comando:</p>
+    <pre><code>attrib -H C:\Documentos\ejemplo.txt</code></pre>
+    <p>Este comando quita el atributo "Oculto" del archivo <code>ejemplo.txt</code>, haciéndolo visible nuevamente.</p>
+    
+    <h2>Conclusión</h2>
+    <p>El comando <code>attrib</code> es útil para cambiar los atributos de archivos y directorios en Windows. Puedes usarlo para ocultar archivos, hacerlos de solo lectura, y más.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
 </body>
 </html>

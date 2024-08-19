@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>25.- Ejecutar la herramienta que permite verificar que discos duros estan instalados y como estan particionados y con que sistemas de archivos estan formateados</title>
+    <link rel="stylesheet" href="./paginas.css">
 </head>
 <body>
     <h1>25.- Ejecutar la herramienta que permite verificar que discos duros estan instalados y como estan particionados y con que sistemas de archivos estan formateados</h1>
+
+    <h2>Cómo verificar discos duros y particiones</h2>
+    <p>Para verificar qué discos duros están instalados en tu sistema, cómo están particionados y con qué sistemas de archivos están formateados, puedes usar la herramienta "Administración de discos" en Windows. Sigue estos pasos:</p>
+    
+    <h2>Paso 1: Abrir la herramienta "Administración de discos"</h2>
+    <p>Para abrir la herramienta "Administración de discos", sigue uno de los siguientes métodos:</p>
+    <ul>
+        <li>Presiona las teclas <code>Win + X</code> y selecciona <strong>Administración de discos</strong> en el menú.</li>
+        <li>Haz clic con el botón derecho en el botón de inicio de Windows y selecciona <strong>Administración de discos</strong>.</li>
+        <li>En el menú de inicio, busca <code>diskmgmt.msc</code> y presiona Enter.</li>
+    </ul>
+    
+    <img src="./img/DiskManagement_1.png" alt="">
+
+    <h2>Paso 2: Verificar discos y particiones</h2>
+    <p>Una vez abierta la herramienta "Administración de discos", verás una ventana similar a esta:</p>
+    <pre><code>--------------------------------------------
+| Volumen | Layout | Tipo     | Sistema de archivos | Estado  | Capacidad | Espacio libre | % Libre |
+--------------------------------------------
+| C:      | Simple | Básico   | NTFS                | Correcto| 500 GB    | 200 GB        | 40%     |
+| D:      | Simple | Básico   | NTFS                | Correcto| 1 TB      | 600 GB        | 60%     |
+--------------------------------------------
+
+--------------------------------------------
+| Disco 0 | 500 GB | Online   |
+--------------------------------------------
+| 500 MB  | Sin asignar       |
+| 100 MB  | Sistema | NTFS    |
+| 499 GB  | C:      | NTFS    |
+--------------------------------------------
+
+--------------------------------------------
+| Disco 1 | 1 TB    | Online   |
+--------------------------------------------
+| 1 TB    | D:      | NTFS    |
+--------------------------------------------</code></pre>
+    <p>En esta ventana, podrás ver:</p>
+    <ul>
+        <li><strong>Volúmenes:</strong> Listado de todas las particiones y unidades lógicas con sus letras de unidad, tipo de partición y sistemas de archivos.</li>
+        <li><strong>Discos físicos:</strong> Listado de discos físicos conectados al sistema, mostrando particiones, espacios sin asignar y sistemas de archivos.</li>
+    </ul>
+    
+    <h2>Paso 3: Detalles adicionales</h2>
+    <p>Puedes hacer clic derecho sobre cualquier volumen o espacio sin asignar para ver más opciones, como cambiar la letra de unidad, formatear, o crear nuevas particiones.</p>
+    
+    <h2>Conclusión</h2>
+    <p>La herramienta "Administración de discos" es muy útil para administrar y verificar el estado de los discos duros y particiones en tu sistema. Te permite ver detalles sobre la capacidad, el sistema de archivos y el estado de cada unidad.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
 </body>
 </html>

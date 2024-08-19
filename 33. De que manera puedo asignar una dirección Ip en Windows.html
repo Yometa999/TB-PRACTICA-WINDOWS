@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./paginas.css">
+    <title>33. De que manera puedo asignar una dirección Ip en Windows</title>
+</head>
+<body>
+    <h1>33. De que manera puedo asignar una dirección Ip en Windows</h1>
+
+    <h2>Cómo asignar una dirección IP en Windows</h2>
+    
+    <h2>Asignar una dirección IP a través del Panel de control</h2>
+    <p>Para asignar una dirección IP manualmente en Windows utilizando el Panel de control, sigue estos pasos:</p>
+    
+    <h3>Paso 1: Abrir el Panel de control</h3>
+    <ul>
+        <li>Presiona las teclas <code>Win + R</code>, escribe <code>control</code> y presiona Enter para abrir el Panel de control.</li>
+    </ul>
+    
+    <img src="./img/33_1.png" alt="">
+
+    <h3>Paso 2: Acceder a las Conexiones de red</h3>
+    <ul>
+        <li>En el Panel de control, selecciona <strong>Redes e Internet</strong>.</li>
+        <li>Haz clic en <strong>Centro de redes y recursos compartidos</strong>.</li>
+        <li>En el panel izquierdo, haz clic en <strong>Cambiar configuración del adaptador</strong>.</li>
+    </ul>
+
+    <img src="./img/33_2.png" alt="">
+    
+    <h3>Paso 3: Configurar las propiedades del adaptador</h3>
+    <ul>
+        <li>Haz clic derecho en la conexión de red que deseas configurar y selecciona <strong>Propiedades</strong>.</li>
+        <li>Selecciona <strong>Protocolo de Internet versión 4 (TCP/IPv4)</strong> y haz clic en <strong>Propiedades</strong>.</li>
+    </ul>
+    
+    <h3>Paso 4: Asignar una dirección IP</h3>
+    <ul>
+        <li>En la ventana de Propiedades de TCP/IPv4, selecciona <strong>Usar la siguiente dirección IP</strong>.</li>
+        <li>Ingresa la dirección IP deseada, la máscara de subred y la puerta de enlace predeterminada.</li>
+        <li>Opcionalmente, puedes ingresar las direcciones de servidor DNS preferido y alternativo.</li>
+        <li>Haz clic en <strong>Aceptar</strong> para aplicar los cambios.</li>
+    </ul>
+
+    <img src="./img/33_3.png" alt="">
+    
+    <h2>Asignar una dirección IP a través del Símbolo del sistema</h2>
+    <p>También puedes asignar una dirección IP manualmente utilizando el Símbolo del sistema. Sigue estos pasos:</p>
+    
+    <h3>Paso 1: Abrir el Símbolo del sistema como administrador</h3>
+    <ul>
+        <li>Presiona las teclas <code>Win + X</code> y selecciona <strong>Símbolo del sistema (Administrador)</strong> o <strong>Windows PowerShell (Administrador)</strong>.</li>
+    </ul>
+
+    <img src="./img/33_4.png" alt="">
+    
+    <h3>Paso 2: Usar el comando netsh</h3>
+    <ul>
+        <li>Escribe el siguiente comando para asignar una dirección IP:
+            <pre><code>netsh interface ip set address name="NombreConexión" static DirecciónIP MáscaraSubred PuertaEnlace</code></pre>
+            <p>Por ejemplo:</p>
+            <pre><code>netsh interface ip set address name="Ethernet" static 192.168.1.100 255.255.255.0 192.168.1.1</code></pre>
+        </li>
+        <li>Para asignar servidores DNS, usa el siguiente comando:
+            <pre><code>netsh interface ip set dns name="NombreConexión" static DirecciónDNS</code></pre>
+            <p>Por ejemplo:</p>
+            <pre><code>netsh interface ip set dns name="Ethernet" static 8.8.8.8</code></pre>
+        </li>
+    </ul>
+    
+    <h2>Conclusión</h2>
+    <p>Asignar una dirección IP manualmente en Windows puede ser útil en varias situaciones, como configurar redes domésticas o solucionar problemas de conectividad. Puedes hacerlo a través del Panel de control o utilizando el Símbolo del sistema, dependiendo de tus preferencias y necesidades.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
+</body>
+</html>

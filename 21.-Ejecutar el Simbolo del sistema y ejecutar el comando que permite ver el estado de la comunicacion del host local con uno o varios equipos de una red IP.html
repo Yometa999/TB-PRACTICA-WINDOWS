@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>21.- Ejecutar el Simbolo del sistema y ejecutar el comando que permite ver el estado de la comunicacion del host local con uno o varios equipos de una red IP</title>
+    <link rel="stylesheet" href="./paginas.css">
 </head>
 <body>
     <h1>21.- Ejecutar el Simbolo del sistema y ejecutar el comando que permite ver el estado de la comunicacion del host local con uno o varios equipos de una red IP</h1>
+
+    <h2>Cómo ejecutar el comando ping</h2>
+    <p>Para verificar el estado de la comunicación del host local con uno o varios equipos de una red IP, sigue estos pasos:</p>
+    
+    <h2>Paso 1: Abrir el Símbolo del sistema</h2>
+    <p>Puedes hacerlo buscando "cmd" en el menú de inicio y seleccionando "Símbolo del sistema".</p>
+
+    <img src="./img/cmd_1.png" alt="">
+    
+    <h2>Paso 2: Ejecutar el comando ping</h2>
+    <p>Ejecuta el comando <code>ping</code> seguido de la dirección IP del equipo con el que deseas verificar la comunicación. Por ejemplo, para hacer ping a la dirección IP <code>192.168.1.1</code>, escribirías:</p>
+    <pre><code>ping 192.168.1.1</code></pre>
+    <p>Esto enviará paquetes ICMP al equipo con la dirección IP <code>192.168.1.1</code> y te mostrará si se reciben respuestas y cuántos paquetes se pierden.</p>
+
+    <img src="./img/cmd_2.png" alt="">
+
+    <h2>Paso 3: Hacer ping a varios equipos</h2>
+    <p>Si deseas hacer ping a varios equipos, simplemente repite el comando con las diferentes direcciones IP. Aquí tienes un ejemplo para hacer ping a dos direcciones IP diferentes:</p>
+    <pre><code>ping 192.168.1.1
+ping 192.168.1.2</code></pre>
+    <p>Cada comando <code>ping</code> se ejecutará por separado, y podrás ver los resultados de la comunicación con cada equipo en la red IP.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
 </body>
 </html>

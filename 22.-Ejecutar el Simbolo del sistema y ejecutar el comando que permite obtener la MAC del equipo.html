@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22.- Ejecutar el Simbolo del sistema y ejecutar el comando que permite obtener la MAC del equipo</title>
+    <link rel="stylesheet" href="./paginas.css">
 </head>
 <body>
     <h1>22.- Ejecutar el Simbolo del sistema y ejecutar el comando que permite obtener la MAC del equipo</h1>
+
+    <h2>Cómo obtener la dirección MAC del equipo</h2>
+    <p>Para obtener la dirección MAC del equipo usando el Símbolo del sistema, sigue estos pasos:</p>
+    
+    <h2>Paso 1: Abrir el Símbolo del sistema</h2>
+    <p>Puedes hacerlo buscando "cmd" en el menú de inicio y seleccionando "Símbolo del sistema".</p>
+    
+    <h2>Paso 2: Ejecutar el comando ipconfig /all</h2>
+    <p>Ejecuta el comando <code>ipconfig /all</code> para obtener información detallada de todas las interfaces de red del equipo, incluyendo la dirección MAC. Escribe el siguiente comando y presiona Enter:</p>
+    <pre><code>ipconfig /all</code></pre>
+    <p>Este comando mostrará una lista de todas las interfaces de red disponibles en el equipo. Busca la sección correspondiente a la interfaz de red que estás utilizando. La dirección MAC estará etiquetada como "Dirección física" (Physical Address).</p>
+
+    <img src="./img/cmd_3.png" alt="">
+
+    <h2>Ejemplo de salida</h2>
+    <p>Aquí tienes un ejemplo de cómo podría verse la salida del comando:</p>
+    <pre><code>Adaptador de Ethernet Conexión de área local:
+
+   Sufijo DNS específico para la conexión. . : example.com
+   Descripción . . . . . . . . . . . . . . . : Intel(R) Ethernet Connection
+   Dirección física. . . . . . . . . . . . . : 00-1A-2B-3C-4D-5E
+   DHCP habilitado. . . . . . . . . . . . . : Sí
+   Configuración automática habilitada . . . : Sí</code></pre>
+    <p>En este ejemplo, la dirección MAC es <code>00-1A-2B-3C-4D-5E</code>.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
 </body>
 </html>

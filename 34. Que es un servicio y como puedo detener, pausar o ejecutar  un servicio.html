@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./paginas.css">
+    <title>34. Que es un servicio y como puedo detener, pausar o ejecutar  un servicio</title>
+</head>
+<body>
+    <h1>34. Que es un servicio y como puedo detener, pausar o ejecutar  un servicio</h1>
+
+    <h2>Administrar servicios en Windows</h2>
+    
+    <h2>¿Qué es un servicio en Windows?</h2>
+    <p>Un servicio en Windows es una aplicación que se ejecuta en segundo plano y realiza tareas esenciales del sistema o proporciona soporte a otras aplicaciones. Los servicios no tienen interfaces de usuario y pueden configurarse para iniciarse automáticamente al arrancar el sistema, manualmente cuando sea necesario o desactivarse si no se requieren.</p>
+    
+    <h2>Cómo detener, pausar o ejecutar un servicio</h2>
+    <p>En Windows, hay varias maneras de gestionar los servicios. A continuación se describen dos métodos comunes: a través de la consola de Servicios y utilizando el Símbolo del sistema.</p>
+    
+    <h3>Método 1: Usando la consola de Servicios</h3>
+    
+    <h4>Paso 1: Abrir la consola de Servicios</h4>
+    <ul>
+        <li>Presiona las teclas <code>Win + R</code>, escribe <code>services.msc</code> y presiona Enter.</li>
+    </ul>
+
+    <img src="./img/34_1.png" alt="">
+    
+    <h4>Paso 2: Gestionar un servicio</h4>
+    <ul>
+        <li>En la ventana de Servicios, busca el servicio que deseas administrar en la lista.</li>
+        <li>Haz clic derecho sobre el servicio y selecciona la acción deseada:
+            <ul>
+                <li><strong>Iniciar:</strong> Ejecuta el servicio si está detenido.</li>
+                <li><strong>Detener:</strong> Detiene el servicio si está en ejecución.</li>
+                <li><strong>Pausar:</strong> Suspende temporalmente el servicio.</li>
+                <li><strong>Reanudar:</strong> Continúa la ejecución de un servicio pausado.</li>
+                <li><strong>Reiniciar:</strong> Detiene y luego inicia el servicio nuevamente.</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Método 2: Usando el Símbolo del sistema</h3>
+    
+    <h4>Paso 1: Abrir el Símbolo del sistema como administrador</h4>
+    <ul>
+        <li>Presiona las teclas <code>Win + X</code> y selecciona <strong>Símbolo del sistema (Administrador)</strong> o <strong>Windows PowerShell (Administrador)</strong>.</li>
+    </ul>
+
+    <img src="./img/34_2.png" alt="">
+    
+    <h4>Paso 2: Usar los comandos adecuados</h4>
+    <ul>
+        <li>Para iniciar un servicio, usa el siguiente comando:
+            <pre><code>net start "NombreServicio"</code></pre>
+            <p>Por ejemplo:</p>
+            <pre><code>net start "wuauserv"</code></pre>
+        </li>
+        <li>Para detener un servicio, usa el siguiente comando:
+            <pre><code>net stop "NombreServicio"</code></pre>
+            <p>Por ejemplo:</p>
+            <pre><code>net stop "wuauserv"</code></pre>
+        </li>
+        <li>Para pausar un servicio, usa el siguiente comando (no todos los servicios admiten esta operación):
+            <pre><code>net pause "NombreServicio"</code></pre>
+            <p>Por ejemplo:</p>
+            <pre><code>net pause "Spooler"</code></pre>
+        </li>
+        <li>Para reanudar un servicio pausado, usa el siguiente comando:
+            <pre><code>net continue "NombreServicio"</code></pre>
+            <p>Por ejemplo:</p>
+            <pre><code>net continue "Spooler"</code></pre>
+        </li>
+    </ul>
+    
+    <h2>Conclusión</h2>
+    <p>Administrar servicios en Windows es una tarea crucial para el mantenimiento del sistema y la solución de problemas. Ya sea a través de la consola de Servicios o utilizando comandos en el Símbolo del sistema, puedes iniciar, detener, pausar o reanudar servicios según sea necesario para garantizar el buen funcionamiento de tu sistema operativo.</p>
+
+    <div>
+        <a href="./index.html" style="float: right;font-size: 45px; color: white;margin-bottom: 30px;">Click para Regresar 🏠
+            <!-- <img src="ruta_de_la_imagen.jpg" alt="Regresar"> -->
+        </a>
+    </div>
+
+</body>
+</html>
